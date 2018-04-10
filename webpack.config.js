@@ -8,6 +8,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.[hash].js',
+    publicPath: '/',
   },
   devtool: 'inline-source-map',
   module: {
@@ -39,7 +40,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'public/index.html',
       favicon: 'public/favicon.ico',
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
   // Dev Server
   devServer: {
@@ -47,5 +49,6 @@ module.exports = {
     port: port,
     historyApiFallback: true,
     open: true,
+    hot: true,
   },
 };
