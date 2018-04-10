@@ -10,7 +10,7 @@ import Loading from './Loading';
 
 const AsyncDynamicPage = importedComponent(
   () => {
-    import(/* webpackChunkName: 'DynamicPage' */ './DynamicPage.js')
+    return import(/* webpackChunkName: 'DynamicPage' */ './DynamicPage.js')
   },
   {
     LoadingComponent: Loading
@@ -19,7 +19,7 @@ const AsyncDynamicPage = importedComponent(
 
 const AsyncNoMatch = importedComponent(
   () => {
-    import(/* webpackChunkName: 'NoMatch' */ './NoMatch.js')
+    return import(/* webpackChunkName: 'NoMatch' */ './NoMatch.js')
   },
   {
     LoadingComponent: Loading
