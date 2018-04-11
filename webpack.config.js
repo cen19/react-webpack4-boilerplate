@@ -54,7 +54,7 @@ module.exports = {
     open: true,
     hot: true,
   },
-  optimizations: {
+  optimization: {
     splitChunks: {
       cacheGroups: {
         vendor: {
