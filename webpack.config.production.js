@@ -63,14 +63,6 @@ module.exports = {
       allChunks: true
     }),
   ],
-  // Dev Server
-  devServer: {
-    host: 'localhost',
-    port: port,
-    historyApiFallback: true,
-    open: true,
-    hot: true,
-  },
   optimization: {
     splitChunks: {
       cacheGroups: {
