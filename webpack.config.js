@@ -7,7 +7,7 @@ module.exports = {
   mode: 'development',
   entry: {
     vendor: ['semantic-ui-react'],
-    app: './src/index/js'
+    app: './src/index.js'
   },
   output: {
     filename: '[name].[hash].js',
