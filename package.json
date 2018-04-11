@@ -10,6 +10,8 @@
     "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.production.js"
   },
   "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3",
     "react": "^16.3.1",
     "react-delay-render": "^0.1.2",
     "react-dom": "^16.3.1",
